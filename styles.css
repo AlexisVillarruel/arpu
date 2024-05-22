@@ -1,0 +1,342 @@
+.title-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+.title-icon {
+    margin-right: 10px; /* Espacio entre el icono y el título */
+}
+header {
+    /* height: 80vh; Establece la altura del encabezado al 90% del tamaño de la ventana del navegador */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; Centra la imagen horizontalmente */
+    /* align-items: center; */
+    text-align: center;
+    /* padding: 0 20px;  */
+    padding-top: 100px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    min-height: 100vh; /* Alinear el texto al centro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: 0 ;
+    padding-top: 0; 
+    /* box-sizing: border-box;
+    align-items: center;
+    display: block;
+    max-width: 1000px;
+    overflow-x: hidden; */
+}
+nav {
+    /* width: 100%;
+    margin-top: 0;
+    padding-top: 0;    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Ajusta el color de fondo según tus preferencias */
+    z-index: 1000;
+}
+
+.Logo{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* z-index: 1000; */
+    width: 100%;
+    max-width: 1200px; /* Ajusta según el ancho máximo deseado */
+    padding: 0 20px;
+}
+.Logo img{
+    width: 100%; /* Establece el ancho de la imagen como un porcentaje del contenedor */
+    max-width: 1200px; /* Establece el ancho máximo de la imagen */
+    height: auto; 
+}
+
+main {
+    padding: 20px;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 32px; /* Tamaño del texto en relación con el ancho de la ventana del navegador */
+    max-width: 100%; /* Establece el ancho máximo del título */
+     /* Oculta el texto que sobrepase el ancho máximo */
+    /* white-space: nowrap; */
+    margin-bottom: 12%;
+    margin-top: 30vw;
+}
+.carousel {
+    width: 80%;
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    overflow: hidden;
+    border: none;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Altura fija para las imágenes del carrusel */
+    max-width: 90%;
+}
+
+.carousel-dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.carousel-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #333;
+}
+
+footer {
+    padding: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+}
+
+footer form label {
+    margin: 10px 0 5px;
+    
+}
+
+footer form input, footer form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer form button {
+    width: 50%;
+    max-width: max-content;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer form button:hover {
+    background-color: #218838;
+}
+
+.whatsapp-button {
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 80px;
+    right: -5px;
+    z-index:1000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    top: 105%;
+    align-items: center;
+}
+.whatsapp-button img {
+    width: 90px; /* Tamaño deseado */
+    height: auto;
+    
+}
+.whatsapp-button img:hover {
+    border-color: #23532e;
+}
+.whatsapp-button:active img {
+    fill: #218838; /* Cambia el color del icono cuando se hace clic */
+}
+
+.links {
+    display: none;
+    position: absolute;
+    bottom: 5px; /* Ajusta la posición de los enlaces */
+    right: 60%;
+    background-color: white;
+    border: 1px solid #797979;
+    border-radius: 5px;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.links a {
+    display: block;
+    padding: 5px 0;
+    color: black;
+    text-decoration: none;
+}
+.links a:hover {
+    color: #19b619;
+}
+
+.whatsapp-button:hover .links {
+    display: block;
+    opacity: 1;
+    top: -10px; 
+}
+
+.social-floating {
+    position: fixed;
+    top: 70%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.social-floating a {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    transition: transform 0.3s ease;
+}
+
+.social-floating a:hover {
+    transform: scale(1.1);
+}
+
+.social-floating img {
+    width: 90px; /* Tamaño del ícono */
+    height: auto;
+    border-radius: 50%; /* Hace los iconos circulares */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 150px;
+}
+
+.social-floating span {
+    margin-top: 5px; /* Espacio entre el ícono y el texto */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold;
+    margin-right: 150px;
+}
+.whatsapp-button span{
+    display: block; /* Hace que el texto sea un bloque para que se coloque debajo de la imagen */
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+    font-size: 14px; 
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .Logo {
+        /* position: fixed; /* Mantén la posición fija en dispositivos móviles */
+        /* top: 0; Asegúrate de que el logo esté en la parte superior */
+        /* left: 50%; Centra horizontalmente */ 
+        /* transform: translateX(-50%); Centra horizontalmente */
+        max-width: 100%; /* Cambia el índice z para que esté detrás del contenido */
+    }
+    .carousel {
+        max-width: 100%;
+    }
+    
+    .social-floating {
+        right: 10px;
+    }
+
+    .botones-flotantes {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 100%; /* O ajusta según el ancho deseado */
+        text-align: center; /* Para centrar los botones en dispositivos pequeños */
+      }
+
+    .whatsapp-button img {
+        width: 50px;
+    }
+
+    .social-floating img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .social-floating span {
+        margin-right: 10px;
+    }
+
+    #titulo {
+        font-size: 20px; /* Tamaño del título en dispositivos móviles */
+        margin-bottom: 4%; /* Espaciado inferior reducido para dispositivos móviles */
+        margin-top: 120px;
+    }
+}
+
+.scroll-down-icon {
+    position: fixed;
+    bottom: 80px; /* Ajusta según la posición vertical deseada */
+    left: 48%;
+    transform: translateX(-50%);
+    width: 50px; /* Ajusta según el tamaño del icono */
+    height: 40px; /* Ajusta según el tamaño del icono */
+    background-image: url('img/flechapng.png'); /* Reemplaza 'ruta-de-la-imagen' con la ruta de tu imagen */
+    background-size: cover;
+    opacity: 1;
+    animation: fadeOut 2s infinite alternate;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px); /* Ajusta según la distancia de desvanecimiento deseada */
+    }
+  }
+  
+.hide-animation {
+    opacity: 0;
+    display: none;
+  }
