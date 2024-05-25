@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
-
-Sitemap: https://arpu.store/sitemap.xml
+Allow: /
+Sitemap: https://www.arpu.store/sitemap.xml
