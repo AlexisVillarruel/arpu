@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Fuente predeterminada */
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Centrar el texto por defecto */
+}
+
+header {
+    background-color: #3b7091;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar los elementos dentro del contenedor */
+}
+
+.logo {
+    max-height: 200px; /* Altura máxima */
+    width: auto;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.btn-redirect {
+    background-color: #4f8eb6;
+    color: #fdfeff;
+    padding: 10px 20px;
+    margin-top: 10px; /* Aumentar el margen superior para separar del título */
+    margin-left: 50px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-redirect:hover {
+    background-color: #3b7091;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center; /* Centrar el grid */
+}
+
+.producto {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.producto img {
+    width: 335px;
+    height: 473.83px;
+    object-fit: cover; /* Mantiene la proporción de la imagen al rellenar el espacio */
+}
+
+.producto h2 {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 1200px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .producto img {
+        width: 100%; /* Asegurarse de que las imágenes se ajusten al contenedor */
+        height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+    }
+    .btn-redirect {
+        margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+        margin-top: 10px; /* Mantener el margen superior */
+    }
+}
