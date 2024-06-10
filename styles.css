@@ -17,6 +17,25 @@ header {
     padding-top: 100px;
 }
 
+.catalog-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background-color: #327094; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita la subrayado del texto */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+/* Estilos para cuando el cursor está sobre el botón */
+.catalog-button:hover {
+    background-color: #3cabc7; /* Cambia el color de fondo al pasar el ratón */
+}
+
 .main-container {
     display: flex;
     justify-content: center; /* Centrar horizontalmente el contenido */
@@ -75,7 +94,7 @@ main {
     max-width: 100%; /* Establece el ancho máximo del título */
      /* Oculta el texto que sobrepase el ancho máximo */
     /* white-space: nowrap; */
-    margin-bottom: 12%;
+    margin-bottom: 9%;
     margin-top: 31vw;
 }
 .carousel {
